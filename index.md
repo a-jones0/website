@@ -23,7 +23,7 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[https://www.google.com/](url) and ![https://www.abetterbalance.org/five-ways-to-thank-and-support-workers-this-labor-day/](src)
+[Link](https://www.google.com/) and ![Image](https://www.abetterbalance.org/five-ways-to-thank-and-support-workers-this-labor-day/)
 ```
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
