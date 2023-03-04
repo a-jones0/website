@@ -1,5 +1,8 @@
 /* Stylesheet for My Website */
 
 body {
-    background-image: ;
+    background-image: /images/dark_space.jpg;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
