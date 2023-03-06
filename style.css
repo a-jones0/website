@@ -1,9 +1,104 @@
-/* Stylesheet for My Website */
+/* Stylesheet for My Website */ 
+
+* {
+    box-sizing: border-box;
+  }
+
+/* 
+  The page has three columns - left, middle, right. The middle column is split into four rows (one for each section). Each section may have further divisions if there are images/misc. content.
+    1. Left
+    2. Middle
+        1. Header
+            1. Logo
+            2. Navigation Bar
+        2. Home
+            1. "Hello, World!" greeting text
+            2. Avatar photo
+        3. About
+            1. "About" text
+            2. Photo
+        4. Portfolio
+        5. Contact
+    3. Right
+*/
 
 body {
-    background-image: url(images/dark_space.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: white;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Courier New', Courier, monospace;
+    color: lightgray;
+    margin: 0;
+}
+
+/* MAIN COLUMN 2*/
+.middle {
+    flex:5;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #114; */
+    background: linear-gradient(#114, black);
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    /* align items center along horizontal axis */
+    font-size:medium;
+    padding: 10px;
+}
+
+#nav_logo_img {
+    outline: white solid 1px;
+}
+
+#nav_logo_img:hover {
+    outline: whitesmoke solid 1px;
+    opacity: 0.5;
+}
+
+.home {
+    display: flex;
+    flex: 5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.profile_pic {
+    opacity: 0.5;
+}
+
+.profile_pic:hover {
+    opacity: 1.0;
+}
+
+.portfolio {
+    flex: 1;
+}
+
+.contact {
+    flex: 1;
+}
+
+/* MAIN COLUMN 1*/
+.left_sidebar {
+    flex:1;
+    order: 1;
+    /* background-color: #114; */
+    background: linear-gradient(#114, black);
+}
+
+/* MAIN COLUMN 3*/
+.right_sidebar {
+    flex: 1;
+    order: 3;
+    /* background-color: #114; */
+    background: linear-gradient(#114, black);
 }
