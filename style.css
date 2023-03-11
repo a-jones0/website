@@ -22,17 +22,12 @@
     3. Right
 */
 
-html {
-    height:100%;
-}
-
 body {
     display: flex;
     flex-direction: row;
     font-family: 'Courier New', Courier, monospace;
     color: lightgray;
     margin: 0;
-    min-height:100;
     background: linear-gradient(#114, black);
 }
 
@@ -49,7 +44,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;    /* align items center along horizontal axis */
-    font-size:medium;
+    font-size:larger;
     padding: 10px;
 }
 
@@ -64,31 +59,37 @@ header {
 
 .home {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     /* flex:2; */
     /* padding-top: 50px;
     padding-bottom: 50px; */
+    
 }
 
-.about {
-    display: flex;
-    /* flex: 1; */
-    align-items: center;
+.home_text {
+    flex-basis: 60%;
+    font-size: 120%;
 }
 
 .profile_pic {
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .profile_pic:hover {
     opacity: 1.0;
 }
 
-/* .portfolio {
-    flex: 1;
-}*/
+.about {
+    display: flex;
+}
+
+.portfolio {
+    display: flex;
+}
 
 .contact {
-    flex-grow: 1;
+    display: flex;
 } 
 
 /* MAIN COLUMN 1*/
