@@ -38,6 +38,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 header {
@@ -45,7 +46,8 @@ header {
     justify-content: space-between;
     align-items: center;    /* align items center along horizontal axis */
     font-size:larger;
-    padding: 10px;
+    flex-wrap: wrap;
+    /* padding: 10px; */
 }
 
 #nav_logo_img {
@@ -82,14 +84,17 @@ header {
 
 .about {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .portfolio {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .contact {
     display: flex;
+    flex-wrap: wrap;
 } 
 
 /* MAIN COLUMN 1*/
