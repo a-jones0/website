@@ -1,5 +1,5 @@
 /*
-    1. Create two canvas objects within the webpages left and right sidebars.
+    1. Create two canvas objects within the webpage's left and right sidebars.
     2. Draw particle effects within the canvas objects.
         - Particles will not bounce, instead will "portal" to the other side upon collision with a wall
 */
