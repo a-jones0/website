@@ -17,7 +17,7 @@
         3. About
             1. "About" text
             2. Photo
-        4. Portfolio
+        4. Projects
         5. Contact
     3. Right
 */
@@ -47,7 +47,8 @@ header {
     align-items: center;    /* align items center along horizontal axis */
     font-size:larger;
     flex-wrap: wrap;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 
 #nav_logo_img {
@@ -68,7 +69,24 @@ header {
 
 .home_text {
     flex-basis: 60%;
-    font-size: 120%;
+    flex-grow: 1;
+    font-size: x-large;
+    opacity: 0.9;
+}
+
+#home_greeting {
+    
+}
+
+#home_name {
+    color: magenta;
+    opacity: 0.6;
+}
+
+#home_descrip {
+    font-size: 90%;
+    max-width: 600px;
+    color: lightgray;
 }
 
 .profile_pic {
@@ -85,7 +103,11 @@ header {
     flex-wrap: wrap;
 }
 
-.portfolio {
+#about_para{
+    font-size: large;
+}
+
+.projects {
     display: flex;
     flex-wrap: wrap;
 }
