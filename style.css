@@ -1,9 +1,5 @@
 /* Stylesheet for My Website */ 
 
-* {
-    box-sizing: border-box;
-  }
-
 /* 
   The page has three columns - left, middle, right. The middle column is split into four rows (one for each section). Each section may have further divisions if there are images/misc. content.
     1. Left
@@ -21,6 +17,14 @@
         5. Contact
     3. Right
 */
+
+* {
+    box-sizing: border-box;
+  }
+
+  :root {
+    --heading-size: 30px;
+  }
 
 body {
     display: flex;
@@ -61,60 +65,71 @@ header {
 }
 
 /* home welcome text and avatar photo */
-.home {
+#home {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
+    padding-top: 2%;
+    padding-bottom: 5%;
 }
 
-.home_text {
-    flex-basis: 60%;
+#home_text {
     flex-grow: 1;
-    font-size: x-large;
+    font-size: 80px;
     opacity: 0.9;
+    max-width: 600px;
 }
 
 #home_greeting {
-    
+    font-size: 40px;
 }
 
 #home_name {
     color: magenta;
     opacity: 0.6;
+    font-size: 70px;
 }
 
 #home_descrip {
-    font-size: 90%;
-    max-width: 600px;
+    font-size: 40px;
     color: lightgray;
 }
 
 .profile_pic {
+    display: flex;
     opacity: 0.7;
+    flex-grow: 1;
+    justify-content: center;
 }
 
 .profile_pic:hover {
     opacity: 1.0;
 }
+/* page sections: classes and variables */
+.heading{
+    font-size: var(--heading-size);
+}
 
-/* about section */
-.about {
+.page-section{
     display: flex;
     flex-wrap: wrap;
+    padding: 20px 0 20px 0;
+    line-height: 25px;
+    font-size: larger;
+}
+
+/* about section */
+#about {
 }
 
 #about_para{
-    font-size: large;
+    
 }
 
-.projects {
-    display: flex;
-    flex-wrap: wrap;
+#projects {
 }
 
-.contact {
-    display: flex;
-    flex-wrap: wrap;
+#contact {
 } 
 
 /* SIDEBARS */
