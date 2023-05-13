@@ -24,6 +24,7 @@
 
   :root {
     --heading-size: 30px;
+    --gallery-tile-size: 150px;
   }
 
 body {
@@ -118,19 +119,104 @@ header {
     font-size: larger;
 }
 
-/* about section */
-#about {
+#projects {
+    flex-direction: column;
 }
 
-#about_para{
+.gallery {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.gallery-tile {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile-text-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 140px;
+    margin-bottom: 40px;
+}
+
+.tile-img-container {
+    flex-grow: 1;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+#clickglance-title {
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+#cg-sub {
+    font-size: 20px;
+}
+
+#clickglance-img {
+    object-fit: contain;
+    max-height: 351px;
+    align-self: flex-end;
+    filter: saturate(50%) brightness(80%);
+}
+
+#clickglance-img:hover {
+    filter: saturate(100%) brightness(100%);
+}
+
+#clickglance-descrip {
+    position: absolute;
+    max-width: 652px;
+    margin-top: 105px;
+    padding: 20px;
+    background: #24244a;
+    /* background: #181828; */
+    font-size: 16px;
+    font-family: 'Tahoma', 'Arial', sans-serif;
+    z-index: 200;
     
 }
 
-#projects {
+#cg-descrip-para {
+    margin: 0px;
 }
 
-#contact {
-} 
+.links-container {
+    display: flex;
+    margin-top: 15px;
+}
+
+.links-container a {
+    color: white;
+    margin-right: 10px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.links-container a:hover {
+    color: rgb(172, 88, 184);
+}
+
+footer {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 13px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: gray;
+}
+
+footer a:hover {
+    color: rgb(172, 88, 184);
+}
+
 
 /* SIDEBARS */
 .sidebar{

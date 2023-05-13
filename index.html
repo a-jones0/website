@@ -9,6 +9,8 @@
         <title>My Website</title>
 
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
         <!-- Favicon icon code -->
         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -23,7 +25,6 @@
         </div>
         <!-- MIDDLE SECTION -->
         <div class="middle">
-           
             <header>
                 <div class="nav_logo">
                     <img id="nav_logo_img" src="android-chrome-192x192.png" width="32px" height="32px">
@@ -37,7 +38,6 @@
                 </nav>
     
             </header>
-             
             <div id="home">
                 <div id="home_text">
                     <h4 id="home_greeting">Hello, world! My name is </h4>
@@ -49,8 +49,6 @@
                 </div>
                 
             </div>
-
-            
             <div class="page-section" id="about">
                 <div class="about_text">
                     <h2 class="heading" id="about">About Me</h2>
@@ -59,26 +57,49 @@
                 </div>
                 
             </div>
-
             <div class="page-section" id="projects">
                 <div class="projects_text">
-                    <h2 class="heading" id="projects">Projects</h2>
-                    <ul>
-                        <li><a href="https://clickglance.com/" target="_blank">ClickGlance: A Calendar/To-Do List Web App</a></li>
-                    </ul>
-
+                    <h2 class="heading" id="projects-heading">Projects</h2>
+                </div>
+                <div class="gallery">
+                    <div class="gallery-tile" id="clickglance-tile">
+                        <div class="tile-text-container">
+                            <h3 class="project-title" id="clickglance-title">
+                                ClickGlance <br>
+                                <span id="cg-sub">A Calendar/To-Do List Web App</span>
+                            </h3>
+                            <div class="project-descrip" id="clickglance-descrip">
+                                <p id="cg-descrip-para">
+                                    A calendar planner with to-do list capabilities. <br>
+                                    Create tasks, assignments, and events that will appear on a month-view calendar grid. <br>
+                                    Click on these items to quickly change their status. <br>
+                                    Group items in different calendars, group calendars in calendar groups.
+                                </p>
+                                <div class="links-container">
+                                    <a class="material-symbols-outlined" href="https://clickglance.com/" target="_blank">open_in_new</a>
+                                    <a class="fa fa-github github-icon" href="https://github.com/a-jones0/clickglance" target="_blank"></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="tile-img-container">
+                            <img src="images/clickglance.png" id="clickglance-img">
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
-
             <div class="page-section" id="contact">
                 <div class="contact_text">
                     <h2 class="heading" id="Contact">Contact</h2>
-                    <ul>
-                        <li><a href="#"> aishahjones29@gmail.com </a></li>
-                    </ul>
+                    Questions? Comments? Feel free to send me a message at <a href="mailto:aishahjones29@gmail.com"> aishahjones29@gmail.com </a></li>
                 </div>
             </div>
-
+            <footer id="page-footer">
+                <a href="https://github.com/a-jones0/website/tree/gh-pages" target="_blank">
+                    Designed, Developed, and Dotingly Debugged by Aishah Jones
+                </a>
+            </footer>
         </div>
         <!-- RIGHT SIDEBAR -->
         <div class="sidebar" id="sidebar_right">
