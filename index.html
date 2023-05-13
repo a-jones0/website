@@ -71,21 +71,22 @@
                             <div class="project-descrip" id="clickglance-descrip">
                                 <p id="cg-descrip-para">
                                     A calendar planner with to-do list capabilities. <br>
-                                    Create tasks, assignments, and events that will appear on a month-view calendar grid. <br>
-                                    Click on these items to quickly change their status. <br>
-                                    Group items in different calendars, group calendars in calendar groups.
+                                    <ul>
+                                        <li>Create tasks, assignments, and events that will appear on a month-view calendar grid.</li>
+                                        <li>Group items in different calendars, group calendars in calendar groups.</li>
+                                    </ul>
+                                     
+                                    
                                 </p>
                                 <div class="links-container">
                                     <a class="material-symbols-outlined" href="https://clickglance.com/" target="_blank">open_in_new</a>
                                     <a class="fa fa-github github-icon" href="https://github.com/a-jones0/clickglance" target="_blank"></a>
                                 </div>
                             </div>
-                            
                         </div>
-                        <div class="tile-img-container">
+                        <div class="tile-img-container" id="clickglance-img-container">
                             <img src="images/clickglance.png" id="clickglance-img">
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -105,7 +106,14 @@
         <div class="sidebar" id="sidebar_right">
             <canvas class="canvas" id="canvas_right"></canvas>
         </div>
-
+        <script>
+            document.getElementById("clickglance-img").onmouseover = function(){
+                document.getElementById("clickglance-descrip").style.opacity = 0.5;
+            };
+            document.getElementById("clickglance-img").onmouseleave = function(){
+                document.getElementById("clickglance-descrip").style.opacity = 1;
+            };
+        </script>
         <script src="script.js"></script>
 
     </body>
