@@ -32,19 +32,40 @@ body {
     flex-direction: row;
     font-family: 'Courier New', Courier, monospace;
     color: lightgray;
-    margin: 0;
+    margin: auto;
     background: linear-gradient(#114, black);
 }
 
 /* FLEX COLUMN 2*/
+/* Mobile */
 .middle {
+    /*
     flex:5;
     order: 2;
+    */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
+    margin: 10px calc(8px + 1.5625vw);
+    
 }
+
+/* Tablet */
+@media (min-width:600px) {
+    .middle {
+        margin: 10px 100px;
+    }
+}
+
+/* Desktop */
+@media (min-width:900px) {
+    .middle {
+        margin: 10px 180px;
+    }
+}
+
+
 /* header and navigation */
 header {
     display: flex;
@@ -72,6 +93,7 @@ header {
     flex-wrap: wrap;
     padding-top: 2%;
     padding-bottom: 5%;
+    line-height: 43px;
 }
 
 #home_text {
@@ -94,6 +116,7 @@ header {
 #home_descrip {
     font-size: 40px;
     color: lightgray;
+    line-height: 38px;
 }
 
 .profile_pic {
@@ -159,6 +182,7 @@ header {
 }
 
 #clickglance-img {
+    display: none;
     object-fit: contain;
     max-height: 351px;
     align-self: flex-end;
@@ -171,6 +195,20 @@ header {
     filter: saturate(100%) brightness(100%);
     opacity: 1;
     z-index: 1000;
+}
+
+/* Tablet */
+@media (min-width:700px) {
+    #clickglance-img {
+        display: block;
+    }
+}
+
+/* Desktop */
+@media (min-width:900px) {
+    #clickglance-img {
+        display: block;
+    }
 }
 
 #clickglance-descrip {
@@ -229,7 +267,10 @@ footer a:hover {
 .sidebar{
     display:flex;
     flex:1;
+    position: relative;
     opacity: 0.5;
+    overflow: hidden;
+    min-width: 95px;
 }
 
 /*specify only width so canvas doesn't stretch*/

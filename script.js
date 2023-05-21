@@ -167,10 +167,11 @@ function animate(){
     }
 }
 
-init();
-animate();
+//init();
+//animate();
 
 // resize canvas every time the browser window is resized
+/*
 window.addEventListener('resize', 
     function(){
         canvas_left.width = left_sidebar_rect.width;
@@ -178,4 +179,5 @@ window.addEventListener('resize',
         canvas_right.width = right_sidebar_rect.width;
         canvas_right.height = document.body.scrollHeight;
     }
-)
+);
+*/
